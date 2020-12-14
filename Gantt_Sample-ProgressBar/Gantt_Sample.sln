@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29324.140
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gantt_Sample", "Gantt_Sample\Gantt_Sample.csproj", "{FDEE930B-E04A-45F0-908E-F8ED61DEA1C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDEE930B-E04A-45F0-908E-F8ED61DEA1C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDEE930B-E04A-45F0-908E-F8ED61DEA1C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDEE930B-E04A-45F0-908E-F8ED61DEA1C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDEE930B-E04A-45F0-908E-F8ED61DEA1C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {32367A94-37F6-4EC9-8DBE-4C27D9F68981}
+	EndGlobalSection
+EndGlobal

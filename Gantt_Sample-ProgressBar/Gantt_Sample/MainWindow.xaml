@@ -1,0 +1,48 @@
+﻿<Window x:Class="Gantt_Sample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:chart="clr-namespace:Syncfusion.Windows.Controls.Gantt.Chart;assembly=Syncfusion.Gantt.Wpf"
+        xmlns:local="clr-namespace:Gantt_Sample"
+        xmlns:shared="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.Wpf"
+        xmlns:sync="http://schemas.syncfusion.com/wpf"
+        Title="Gantt Sample"
+        WindowState="Maximized"
+        WindowStartupLocation="CenterScreen">
+    <Window.DataContext>
+        <local:ViewModel/>
+    </Window.DataContext>
+    <Window.Resources>
+
+        <DataTemplate x:Key="progressTemplate">
+            <Grid>
+                <ProgressBar x:Name="progressBar"   
+                                Visibility="Visible" Minimum="0" Maximum="100" Width="50" Height="15"
+                               Value="{Binding Path=CellBoundValue, Mode=TwoWay}" />
+                <TextBlock Text="{Binding ElementName=progressBar, Path=Value}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            
+            </Grid>
+        </DataTemplate>
+    </Window.Resources>
+   
+    <Grid>
+        <sync:GanttControl x:Name="Gantt"
+                               ItemsSource="{Binding TaskCollection}"
+                               ResourceCollection="{Binding ResourceCollection}"
+                               VisualStyle="Metro"
+                               Loaded="Gantt_Loaded"
+                               >
+            <sync:GanttControl.TaskAttributeMapping>
+                <sync:TaskAttributeMapping  TaskIdMapping="TaskId"
+                                                TaskNameMapping="TaskName"
+                                                StartDateMapping="StartDate" 
+                                                ChildMapping="Child"                                            
+                                                FinishDateMapping="FinishDate"
+                                                DurationMapping="Duration" 
+                                                MileStoneMapping="IsMileStone"
+                                                ProgressMapping="Progress"
+                                                PredecessorMapping="Predecessor"
+                                                ResourceInfoMapping="Resources"/>
+            </sync:GanttControl.TaskAttributeMapping>
+        </sync:GanttControl>
+    </Grid>
+</Window>
