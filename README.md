@@ -55,6 +55,9 @@ This can be achieved by using the DataTemplate of the GanttGrid GridTreeColumn i
 
         }
 ```
+
+KB article - [How-to-show-a-progress-bar-in-GanttGrid-column-in-WPF-GanttControl](https://www.syncfusion.com/kb/12196/how-to-show-a-progress-bar-in-ganttgrid-column-in-wpf-ganttcontrol)
+
 ## See also
 
 [How to add custom tooltip to Gantt](https://help.syncfusion.com/wpf/gantt/customtooltip)
