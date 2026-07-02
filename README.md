@@ -1,5 +1,5 @@
 # How-to-show-a-progress-bar-in-GanttGrid-column-in-WPF-GanttControl
-This article explains how to show the progress bar in a specific column of Syncfusion WPF Gantt control as shown below image.
+This article explains how to show the progress bar in a specific column of [WPF Gantt control](https://www.syncfusion.com/wpf-controls/gantt) as shown below image.
  
  ![](Output.png)
 
@@ -60,7 +60,9 @@ KB article - [How-to-show-a-progress-bar-in-GanttGrid-column-in-WPF-GanttControl
 
 ## See also
 
-[How to add custom tooltip to Gantt](https://help.syncfusion.com/wpf/gantt/customtooltip)
+[Explore WPF Gantt Chart](https://www.syncfusion.com/wpf-controls/gantt)
+
+[How to add custom tooltip to Gantt](https://help.syncfusion.com/wpf/gantt/custom-tooltip)
  
 [How to define your own schedule for Gantt to track the progress of projects](https://help.syncfusion.com/wpf/gantt/custom-schedule)
  
